@@ -1,36 +1,34 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+<div class="navbar " >
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Amazon</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzxcIbWRfb28CmWvMdr44cogaTCXGK094Egw&s"  alt="Logo" width="30" height="24" class="d-inline-block align-text-top rounded">
+     <h2 style=" font-family: 'Dancing Script', cursive;">Majestic Meals</h2>
+    </a>
+  </div>
+</div>
+
+<div class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarScroll">
-      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="" >Home</a>
+          <a class="nav-link active" aria-current="page" routerLink="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="productdetails">productdetails</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Feartures
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Latest</a></li>
-            <li><a class="dropdown-item" href="#">upcoming</a></li>
-            <li><hr class="dropdown-divider"></li>
-            
-          </ul>
+          <a class="nav-link" routerLink="/menu">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " routerLink="/contact">CONTACT</a>
+          <a class="nav-link" routerLink="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/rating">Rating</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+    </div>
     </div>
   </div>
-</nav>

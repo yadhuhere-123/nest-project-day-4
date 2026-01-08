@@ -8,7 +8,7 @@ import { Combination } from "../../component/combination/combination";
 
 @Component({
   selector: 'app-home',
-  imports: [Card, Combination],
+  imports: [ Carosel],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

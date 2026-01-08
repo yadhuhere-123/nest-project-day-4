@@ -15,7 +15,7 @@ cards :any[]=[]
 constructor(private api_service:Service,private cdr:ChangeDetectorRef,private router: Router) { } 
  ngOnInit(): void {
    this.api_service.getProducts().subscribe((data:any)=>{
-    this.cards=data;
+    this.cards=data.recipes;
     // console.log(data);
     this.cdr.detectChanges();
    })

@@ -2,15 +2,16 @@
 <div class="container text-center">
   <div class="row">
     <div class="col">
-      <img src={{product.image}} alt="" style="border-radius: 10%;">
+      <img src={{product.image}} alt="" style="border-radius: 10%; width: 350px;">
     </div>
     <div class="col">
-      <h3>{{product.title}}</h3><br>
-      <h4>${{product.price}}</h4><p> Rating{{product.rating.rate}}</p>
+      <h3>{{product.name}}</h3><br>
+      <h4>{{product.price}}</h4><p> Rating  {{product.rating}}</p>
       <br><br>
-      <p>{{product.description}}</p><br>
+      <p>{{product.instructions}}</p><br>
+       <p>ingredients  <br>{{product.ingredients}}</p><br>
     
       <button type="button" class="btn btn-primary">add to cart</button><br><br>
-      <button type="button" class="btn btn-primary">buy</button>
+     
     </div>
   </div>
